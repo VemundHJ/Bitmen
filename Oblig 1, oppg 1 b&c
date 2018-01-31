@@ -1,0 +1,19 @@
+Disse beskrivelsene er basert på ekstramaterialet til forelesningen «Konvertering mellom tallsystemer». Denne teksten gjennomgår bare metodene for å konvertere naturlige tall, så besvarelsen vil også begrense seg til dette.
+
+Beskriv kort metode for å gå fra binære tall til hexadesimale tall og motsatt. 
+16 -> 2
+For å oversette flersifrete heksadesimaltall til binærtall skriver en ned binærverdien til hvert siffer. Om en starter med sifferet lengst til venstre, og deretter skriver neste siffer ned til høyre for det forrige vil en ende opp med binærtallet etter å ha skrevet ned det siste sifferet. 
+2 -> 16
+For å oversette et mangesifret binærtall til heksadesimaltall oversetter en sett med fire etterfølgende sifre i tallet til heksadesimaltall. Start med de fire sifrene lengst til høyre, skriv ned heksadesimaltallsverdien, skriv ned heksadesimalsifferet av de fire neste sifrene til venstre for det forrige. Gjenta til når heksadesimalversjonen av tallet. Om det siste settet binærtall består av under fire sifre (men mer enn 0) legger en til 0-siffre forrest i rekken slik at settet får fire sifre. 
+
+Beskriv kort metoden for å gå fra binære tall til desimaltall og motsatt.
+2 -> 10
+For å konvertere binærtall til desimaltall gir en hvert siffer en posisjonsverdi. Posisjonsverdien starter med 0 for sifferet lengst til høyre, og øker med 1 for hvert hakk mot venstre.  For hvert siffer multipliserer en sifferets verdi med 2 opphøyd i posisjonsverdien. Produktet av denne kalkulasjonen for hvert siffer summeres – summen er desimaltallsverdien av tallet.
+10 -> 2
+For å konvertere desimaltall til binærtall deler en tallet på 2 (med rest, inkludert 0.) Før ned restverdiene, og del kvotienten med to. Gjenta forrige steg – hver rest skrives ned til høyre for de tidligere nedskrevne sifrene - til kvotienten er 0. Strengen av rest-sifre er binærverdien av tallet.
+
+Beskriv kort metoden for å gå fra hexadesimale tall til desimaltall og motsatt.
+10 -> 16
+For å konvertere desimaltall til heksadesimaltall deler en tallet med 16 (med rest, inkludert 0). Resten noteres, og kvotienten deles med 16. Gjenta forrige steg – hver rest skrives ned til høyre for de tidligere nedskrevne sifrene - til kvotienten er 0. Strengen av rest-sifre er heksadesimalverdien av tallet.
+16 -> 10
+For å oversette heksadesimale tall til desimaltallsystemet gir en hvert siffer en posisjonsverdi. Posisjonsverdien starter med 0 for sifferet lengst til høyre, og øker med 1 for hvert hakk mot venstre.  For hvert siffer multipliserer en sifferets verdi med 16 opphøyd i posisjonsverdien. Produktet av denne kalkulasjonen for hvert siffer summeres – summen er desimaltallsverdien av tallet.
